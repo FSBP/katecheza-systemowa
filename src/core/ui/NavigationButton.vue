@@ -34,7 +34,22 @@
         @include flex-row-center-center;
         cursor: pointer;
         overflow: hidden;
-        position: absolute;
+
+        @media all and (max-width: 767px) {
+            width: 100%;
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        @media all and (min-width: 768px) and (max-width: 1023px) {
+            position: absolute;
+        }
+        @media all and (min-width: 1024px) and (max-width: 1365px) {
+            position: absolute;
+        }
+        @media all and (min-width: 1366px) {
+            position: absolute;
+        }
 
         &:hover::before {
             transform: translateX(0%);
@@ -42,6 +57,15 @@
 
         .label {
             padding: 30px;
+            @media all and (max-width: 767px) {
+                padding: 10px;
+            }
+            @media all and (min-width: 768px) and (max-width: 1023px) {
+                padding: 15px;
+            }
+            @media all and (min-width: 1024px) and (max-width: 1365px) {
+                padding: 20px;
+            }
             width: 100%;
             height: 100%;
             transition: transform 0.3s;
@@ -61,58 +85,170 @@
             @include flex-row-center-center;
             transform: translateX(-100%);
             transition: transform 0.3s;
+
+            @media all and (max-width: 767px) {
+                display: none;
+            }
         }
     }
 
-    .order {
-        &--1 {
-            left: 0;
-            bottom: 0;
-        }
+    @media all and (min-width: 768px) and (max-width: 1023px) {
+        .order {
+            &--1 {
+                left: 0;
+                bottom: 0;
+            }
 
-        &--2 {
-            left: 100px;
-            bottom: 140px;
-        }
+            &--2 {
+                left: 20px;
+                bottom: 140px;
+            }
 
-        &--3 {
-            left: 50px;
-            bottom: 320px;
-        }
+            &--3 {
+                right: 0;
+                bottom: 380px;
+            }
 
-        &--4 {
-            left: 400px;
-            bottom: 170px;
-        }
+            &--4 {
+                right: 60px;
+                bottom: 240px;
+            }
 
-        &--5 {
-            left: 580px;
-            bottom: 400px;
-        }
+            &--5 {
+                left: 20px;
+                bottom: 500px;
+            }
 
-        &--6 {
-            left: 700px;
-            bottom: 640px;
-        }
+            &--6 {
+                right: 100px;
+                bottom: 640px;
+            }
 
-        &--7 {
-            right: 0;
-            bottom: 500px;
-        }
+            &--7 {
+                right: 0;
+                bottom: 540px;
+            }
 
-        &--8 {
-            right: 180px;
-            bottom: 350px;
-        }
+            &--8 {
+                left: 60px;
+                bottom: 300px;
+            }
 
-        &--9 {
-            right: 100px;
-            bottom: 200px;
-        }
+            &--9 {
+                right: 180px;
+                bottom: 120px;
+            }
 
-        &--10 {
-            right: 300px;
-            bottom: 50px;
+            &--10 {
+                right: 10px;
+                bottom: 50px;
+            }
+        }
+    }
+    @media all and (min-width: 1024px) and (max-width: 1365px) {
+        .order {
+            &--1 {
+                left: 0;
+                bottom: 0;
+            }
+
+            &--2 {
+                left: 20px;
+                bottom: 140px;
+            }
+
+            &--3 {
+                left: 50px;
+                bottom: 450px;
+            }
+
+            &--4 {
+                left: 200px;
+                bottom: 270px;
+            }
+
+            &--5 {
+                left: 200px;
+                bottom: 650px;
+            }
+
+            &--6 {
+                left: 450px;
+                bottom: 800px;
+            }
+
+            &--7 {
+                right: 0;
+                bottom: 600px;
+            }
+
+            &--8 {
+                right: 180px;
+                bottom: 400px;
+            }
+
+            &--9 {
+                right: 100px;
+                bottom: 200px;
+            }
+
+            &--10 {
+                right: 300px;
+                bottom: 100px;
+            }
+        }
+    }
+    @media all and (min-width: 1366px) {
+        .order {
+            &--1 {
+                left: 0;
+                bottom: 0;
+            }
+
+            &--2 {
+                left: 20px;
+                bottom: 140px;
+            }
+
+            &--3 {
+                left: 200px;
+                bottom: 260px;
+            }
+
+            &--4 {
+                left: 450px;
+                bottom: 100px;
+            }
+
+            &--5 {
+                left: 600px;
+                bottom: 400px;
+            }
+
+            &--6 {
+                left: 700px;
+                bottom: 570px;
+            }
+
+            &--7 {
+                right: 0;
+                bottom: 430px;
+            }
+
+            &--8 {
+                right: 180px;
+                bottom: 300px;
+            }
+
+            &--9 {
+                right: 100px;
+                bottom: 150px;
+            }
+
+            &--10 {
+                right: 300px;
+                bottom: 0;
+            }
         }
     }
 </style>

@@ -49,19 +49,53 @@
     padding: 70px;
     @include flex-row-center-center;
 
+    @media all and (max-width: 767px) {
+        padding: 20px;
+    }
+
     .menu-wrapper {
         width: 100%;
         max-width: 1600px;
         height: 100%;
         position: relative;
+        overflow-y: auto;
+
+        @media all and (max-width: 767px) {
+            @include flex-column-center-space-between;
+        }
+
+        a {
+            @media all and (max-width: 767px) {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
 
         .logo {
-            width: 50%;
-            max-width: 750px;
+            width: 300px;
             height: auto;
-            position: absolute;
-            top: -50px;
-            left: -50px;
+
+            @media all and (max-width: 767px) {
+                width: 300px;
+                max-width: 80%;
+                margin-bottom: 15px;
+            }
+
+            @media all and (min-width: 768px) and (max-width: 1023px) {
+                position: absolute;
+            }
+
+            @media all and (min-width: 1024px) and (max-width: 1365px) {
+                width: 420px;
+                position: absolute;
+            }
+
+            @media all and (min-width: 1366px) {
+                width: 50%;
+                max-width: 650px;
+                left: -50px;
+                position: absolute;
+            }
         }
 
         .icons-box {
@@ -71,6 +105,10 @@
             position: absolute;
             right: 0;
             top: 0;
+
+            @media all and (max-width: 767px) {
+                display: none;
+            }
 
             .icon {
                 color: $color-white;
