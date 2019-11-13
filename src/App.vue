@@ -1,12 +1,25 @@
 <template>
   <div id="app">
     <div class="main-page" v-if="isMainRouteActive">
-      <router-view />
+      <transition name="router-anim" enter-active-class="animated zoomIn faster" leave-active-class="animated slideOutLeft faster">
+        <router-view />
+      </transition>
     </div>
     <div class="another-page" v-else>
-      <NavigationAside />
+
+      <transition
+              name="router-anim"
+              enter-active-class="animated slideInLeft faster"
+              leave-active-class="animated zoomOut faster">
+        <NavigationAside />
+      </transition>
       <div class="subpage-wrapper">
-        <router-view />
+        <transition
+                name="router-anim"
+                enter-active-class="animated slideInDown faster"
+                leave-active-class="animated slideOutDown faster">
+          <router-view />
+        </transition>
       </div>
     </div>
   </div>
@@ -48,6 +61,13 @@
 <style lang="scss">
 
   @import './assets/styles/common';
+  @import "~animate.css/source/_base.css";
+  @import "~animate.css/source/zooming_entrances/zoomIn.css";
+  @import "~animate.css/source/zooming_exits/zoomOut.css";
+  @import "~animate.css/source/sliding_entrances/slideInDown.css";
+  @import "~animate.css/source/sliding_exits/slideOutDown.css";
+  @import "~animate.css/source/sliding_entrances/slideInLeft.css";
+  @import "~animate.css/source/sliding_exits/slideOutLeft.css";
 
   * {
     padding: 0;
@@ -78,6 +98,8 @@
     .subpage-wrapper {
       width: calc(100% - 400px);
       height: 100%;
+      position: fixed;
+      left: 400px;
     }
   }
 
@@ -112,6 +134,11 @@
       border-width: 35px 0 35px 50px;
       border-color: transparent transparent transparent $color-primary;
     }
+  }
+
+  .page {
+    position: fixed;
+    width: inherit;
   }
 
 </style>

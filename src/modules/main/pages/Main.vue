@@ -1,5 +1,5 @@
 <template>
-    <div class="main-wrapper container">
+    <div class="main-wrapper container page">
         <div class="menu-wrapper">
             <img src="../../../assets/images/waldek.gif" alt="brand icon" class="logo">
             <router-link v-for="(item, index) in items" :to="item.path" :key="index">

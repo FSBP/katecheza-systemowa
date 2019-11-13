@@ -1,6 +1,6 @@
 <template>
-    <aside class="container">
-        <img src="../../assets/images/waldek.gif" alt="" @click="routeToHome">
+    <aside class="container page">
+        <img src="../../assets/images/waldek.gif" alt="logo" @click="routeToHome">
         <ul>
             <router-link v-for="(item, index) in items" :to="item.path" :key="index">
                 <li>{{ item.label }}</li>
