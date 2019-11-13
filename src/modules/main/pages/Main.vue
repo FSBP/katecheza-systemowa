@@ -49,7 +49,7 @@
     padding: 70px;
     @include flex-row-center-center;
 
-    @media all and (max-width: 767px) {
+    @media all and (max-width: $phone-lower-limit) {
         padding: 20px;
     }
 
@@ -60,12 +60,12 @@
         position: relative;
         overflow-y: auto;
 
-        @media all and (max-width: 767px) {
+        @media all and (max-width: $phone-lower-limit) {
             @include flex-column-center-space-between;
         }
 
         a {
-            @media all and (max-width: 767px) {
+            @media all and (max-width: $phone-lower-limit) {
                 width: 100%;
                 max-width: 300px;
             }
@@ -75,22 +75,22 @@
             width: 300px;
             height: auto;
 
-            @media all and (max-width: 767px) {
+            @media all and (max-width: $phone-lower-limit) {
                 width: 300px;
                 max-width: 80%;
                 margin-bottom: 15px;
             }
 
-            @media all and (min-width: 768px) and (max-width: 1023px) {
+            @media all and (min-width: $phone-upper-limit) and (max-width: $tablet-lower-limit) {
                 position: absolute;
             }
 
-            @media all and (min-width: 1024px) and (max-width: 1365px) {
+            @media all and (min-width: $tablet-upper-limit) and (max-width: $laptop-lower-limit) {
                 width: 420px;
                 position: absolute;
             }
 
-            @media all and (min-width: 1366px) {
+            @media all and (min-width: $laptop-upper-limit) {
                 width: 50%;
                 max-width: 650px;
                 left: -50px;
@@ -106,7 +106,7 @@
             right: 0;
             top: 0;
 
-            @media all and (max-width: 767px) {
+            @media all and (max-width: $phone-lower-limit) {
                 display: none;
             }
 

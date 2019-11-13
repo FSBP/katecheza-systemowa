@@ -35,19 +35,19 @@
         cursor: pointer;
         overflow: hidden;
 
-        @media all and (max-width: 767px) {
+        @media all and (max-width: $phone-lower-limit) {
             width: 100%;
             font-size: 20px;
             margin: 15px 0;
         }
 
-        @media all and (min-width: 768px) and (max-width: 1023px) {
+        @media all and (min-width: $phone-upper-limit) and (max-width: $tablet-lower-limit) {
             position: absolute;
         }
-        @media all and (min-width: 1024px) and (max-width: 1365px) {
+        @media all and (min-width: $tablet-upper-limit) and (max-width: $laptop-lower-limit) {
             position: absolute;
         }
-        @media all and (min-width: 1366px) {
+        @media all and (min-width: $laptop-upper-limit) {
             position: absolute;
         }
 
@@ -57,13 +57,13 @@
 
         .label {
             padding: 30px;
-            @media all and (max-width: 767px) {
+            @media all and (max-width: $phone-lower-limit) {
                 padding: 10px;
             }
-            @media all and (min-width: 768px) and (max-width: 1023px) {
+            @media all and (min-width: $phone-upper-limit) and (max-width: $tablet-lower-limit) {
                 padding: 15px;
             }
-            @media all and (min-width: 1024px) and (max-width: 1365px) {
+            @media all and (min-width: $tablet-upper-limit) and (max-width: $laptop-lower-limit) {
                 padding: 20px;
             }
             width: 100%;
@@ -86,13 +86,13 @@
             transform: translateX(-100%);
             transition: transform 0.3s;
 
-            @media all and (max-width: 767px) {
+            @media all and (max-width: $phone-lower-limit) {
                 display: none;
             }
         }
     }
 
-    @media all and (min-width: 768px) and (max-width: 1023px) {
+    @media all and (min-width: $phone-upper-limit) and (max-width: $tablet-lower-limit) {
         .order {
             &--1 {
                 left: 0;
@@ -145,7 +145,7 @@
             }
         }
     }
-    @media all and (min-width: 1024px) and (max-width: 1365px) {
+    @media all and (min-width: $tablet-upper-limit) and (max-width: $laptop-lower-limit) {
         .order {
             &--1 {
                 left: 0;
@@ -198,7 +198,7 @@
             }
         }
     }
-    @media all and (min-width: 1366px) {
+    @media all and (min-width: $laptop-upper-limit) {
         .order {
             &--1 {
                 left: 0;
