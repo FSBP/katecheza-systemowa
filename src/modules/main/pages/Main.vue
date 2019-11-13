@@ -59,6 +59,7 @@
         height: 100%;
         position: relative;
         overflow-y: auto;
+        overflow-x: hidden;
 
         @media all and (max-width: $phone-lower-limit) {
             @include flex-column-center-space-between;

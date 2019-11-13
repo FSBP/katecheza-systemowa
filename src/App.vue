@@ -4,13 +4,18 @@
       <router-view />
     </div>
     <div class="another-page" v-else>
-      <h1>Other Page Bitches</h1>
-      <router-view />
+      <NavigationAside />
+      <div class="subpage-wrapper">
+        <router-view />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+
+  import NavigationAside from './core/ui/NavigationAside.vue';
+
   export default {
     name: 'App.vue',
 
@@ -18,6 +23,10 @@
       return {
         isMainRouteActive: true
       }
+    },
+
+    components: {
+      NavigationAside
     },
 
     created() {
@@ -64,6 +73,12 @@
 
   .another-page {
     min-height: 100vh;
+    @include flex-row;
+
+    .subpage-wrapper {
+      width: calc(100% - 400px);
+      height: 100%;
+    }
   }
 
   .main-page::after, .another-page::after {
@@ -73,13 +88,30 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba($color-secondary-800, 0.6);
+    background-color: rgba($color-secondary-800, 0.4);
     z-index: 20;
   }
 
   .container {
     position: relative;
     z-index: 100;
+  }
+
+  .router-link-active {
+    background-color: $color-primary;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -50px;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 35px 0 35px 50px;
+      border-color: transparent transparent transparent $color-primary;
+    }
   }
 
 </style>

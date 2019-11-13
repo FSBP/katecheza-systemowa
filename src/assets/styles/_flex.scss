@@ -23,6 +23,11 @@
   justify-content: center;
 }
 
+@mixin flex-column-center() {
+  @include flex-column;
+  align-items: center;
+}
+
 @mixin flex-row-center-space-between() {
   @include flex-row;
   align-items: center;
@@ -33,4 +38,9 @@
   @include flex-column;
   align-items: center;
   justify-content: space-between;
+}
+
+@mixin flex-row-center-left() {
+  @include flex-row;
+  align-items: center;
 }
