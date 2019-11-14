@@ -39,6 +39,29 @@
         height: 100%;
         background-color: $color-secondary-800;
         @include flex-column-center;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding-bottom: 50px;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba($color-white, 0.6);
+            border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: $color-white;
+        }
 
         img {
             width: 100%;
@@ -60,7 +83,7 @@
                 height: 70px;
                 color: $color-white;
                 @include font-roboto(300);
-                font-size: 28px;
+                font-size: 25px;
                 padding-left: 20px;
                 @include flex-row-center-left;
                 transition: background 0.1s;
@@ -70,14 +93,14 @@
                     background-color: $color-primary;
                     &::before {
                         content: "";
+                        display: inline-block;
                         position: absolute;
-                        right: -50px;
-                        top: 0;
+                        right: 0;
                         width: 0;
                         height: 0;
                         border-style: solid;
-                        border-width: 35px 0 35px 50px;
-                        border-color: transparent transparent transparent $color-primary;
+                        border-width: 35px 40px 35px 0;
+                        border-color: transparent $color-white transparent transparent;
                     }
                 }
             }

@@ -125,14 +125,14 @@
 
     &::before {
       content: "";
+      display: inline-block;
       position: absolute;
-      right: -50px;
-      top: 0;
+      right: 0;
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 35px 0 35px 50px;
-      border-color: transparent transparent transparent $color-primary;
+      border-width: 35px 40px 35px 0;
+      border-color: transparent $color-white transparent transparent;
     }
   }
 
