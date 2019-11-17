@@ -6,7 +6,6 @@
       </transition>
     </div>
     <div class="another-page" v-else>
-
       <transition
               name="router-anim"
               enter-active-class="animated slideInLeft faster"
@@ -14,6 +13,9 @@
         <NavigationAside />
       </transition>
       <div class="subpage-wrapper">
+        <div class="menu-icon">
+          <img src="./assets/icons/menu-24px (1).svg" alt="menu icon" @click="openMenu">
+        </div>
         <transition
                 name="router-anim"
                 enter-active-class="animated slideInDown faster"
@@ -28,6 +30,7 @@
 <script>
 
   import NavigationAside from './core/ui/NavigationAside.vue';
+  import { bus } from "./main";
 
   export default {
     name: 'App.vue',
@@ -53,6 +56,9 @@
     methods: {
       checkForRoute: function() {
         this.isMainRouteActive = this.$route.path === '/';
+      },
+      openMenu() {
+        bus.$emit('open-modal', true);
       }
     }
   }
@@ -97,10 +103,34 @@
 
     .subpage-wrapper {
       width: calc(100% - 400px);
+      @media all and (min-width: $phone-upper-limit) and (max-width: $tablet-lower-limit) {
+        width: calc(100% - 300px);
+        left: 300px;
+      }
+      @media all and (max-width: $phone-lower-limit) {
+        width: 100%;
+        left: 0;
+      }
       height: 100%;
       left: 400px;
       position: fixed;
-      z-index: 1000000000000;
+      z-index: 1000;
+
+      .menu-icon {
+        position: absolute;
+        top: 18px;
+        left: 18px;
+        display: none;
+        z-index: 10000000;
+        border-radius: 10px;
+        background-color: $color-secondary-800;
+        img {
+          width: 50px;
+        }
+        @media all and (max-width: $phone-lower-limit) {
+          display: block;
+        }
+      }
     }
   }
 
