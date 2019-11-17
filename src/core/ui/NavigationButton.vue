@@ -106,22 +106,22 @@
 
             &--3 {
                 right: 0;
-                bottom: 380px;
+                bottom: 320px;
             }
 
             &--4 {
-                right: 60px;
-                bottom: 240px;
+                right: 0;
+                bottom: 210px;
             }
 
             &--5 {
                 left: 20px;
-                bottom: 500px;
+                bottom: 400px;
             }
 
             &--6 {
-                right: 100px;
-                bottom: 640px;
+                right: 0;
+                bottom: 420px;
             }
 
             &--7 {
@@ -131,17 +131,17 @@
 
             &--8 {
                 left: 60px;
-                bottom: 300px;
+                bottom: 250px;
             }
 
             &--9 {
-                right: 180px;
-                bottom: 120px;
+                right: 220px;
+                bottom: 100px;
             }
 
             &--10 {
                 right: 10px;
-                bottom: 50px;
+                bottom: 0;
             }
         }
     }
@@ -159,42 +159,42 @@
 
             &--3 {
                 left: 50px;
-                bottom: 450px;
+                bottom: 350px;
             }
 
             &--4 {
                 left: 200px;
-                bottom: 270px;
+                bottom: 200px;
             }
 
             &--5 {
-                left: 200px;
-                bottom: 650px;
+                right: 200px;
+                bottom: 600px;
             }
 
             &--6 {
-                left: 450px;
-                bottom: 800px;
+                right: 5px;
+                bottom: 220px;
             }
 
             &--7 {
                 right: 0;
-                bottom: 600px;
+                bottom: 480px;
             }
 
             &--8 {
                 right: 180px;
-                bottom: 400px;
+                bottom: 350px;
             }
 
             &--9 {
-                right: 100px;
-                bottom: 200px;
+                right: 50px;
+                bottom: 50px;
             }
 
             &--10 {
                 right: 300px;
-                bottom: 100px;
+                bottom: 10px;
             }
         }
     }

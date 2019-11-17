@@ -98,8 +98,9 @@
     .subpage-wrapper {
       width: calc(100% - 400px);
       height: 100%;
-      position: fixed;
       left: 400px;
+      position: fixed;
+      z-index: 1000000000000;
     }
   }
 
