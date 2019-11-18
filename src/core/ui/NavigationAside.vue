@@ -29,7 +29,9 @@
 
         watch:{
             $route (to, from) {
-                this.opened = !this.opened;
+                if (window.innerWidth < 768) {
+                    this.opened = !this.opened;
+                }
             }
         },
 
