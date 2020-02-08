@@ -1,7 +1,7 @@
 <template>
-    <button :class="['btn btn--absolute', `order--${ position }`]" :data-label="label">
+    <div :class="['btn btn--absolute', `order--${ position }`]" :data-label="label">
         <div class="label">{{ label }}</div>
-    </button>
+    </div>
 </template>
 
 <script>
@@ -59,6 +59,7 @@
             padding: 30px;
             @media all and (max-width: $phone-lower-limit) {
                 padding: 10px;
+                text-align: center;
             }
             @media all and (min-width: $phone-upper-limit) and (max-width: $tablet-lower-limit) {
                 padding: 15px;
@@ -71,8 +72,10 @@
             transition: transform 0.3s;
         }
 
-        &:hover .label {
-            transform: translateY(100%);
+        @media all and (min-width: $phone-lower-limit) {
+            &:hover .label {
+                transform: translateY(100%);
+            }
         }
 
         &::before {

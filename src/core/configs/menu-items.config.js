@@ -35,18 +35,18 @@ export const items = [
         label: 'Uczniowie o katechezie',
         position: 6
     },
-    {
-        path: '/materials',
-        name: 'materials',
-        label: 'Materiały na katechezę',
-        position: 7
-    },
-    {
-        path: '/gallery',
-        name: 'gallery',
-        label: 'Galeria',
-        position: 8
-    },
+    // {
+    //     path: '/materials',
+    //     name: 'materials',
+    //     label: 'Materiały na katechezę',
+    //     position: 7
+    // },
+    // {
+    //     path: '/gallery',
+    //     name: 'gallery',
+    //     label: 'Galeria',
+    //     position: 8
+    // },
     {
         path: '/contact',
         name: 'contact',

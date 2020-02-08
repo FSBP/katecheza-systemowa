@@ -24,11 +24,11 @@ const routes = [
         name: 'course',
         component: () => import('./modules/course/pages/Course.vue')
     },
-    {
-        path: '/materials',
-        name: 'materials',
-        component: () => import('./modules/materials/pages/Materials.vue')
-    },
+    // {
+    //     path: '/materials',
+    //     name: 'materials',
+    //     component: () => import('./modules/materials/pages/Materials.vue')
+    // },
     {
         path: '/news',
         name: 'news',
@@ -54,11 +54,11 @@ const routes = [
         name: 'workshops',
         component: () => import('./modules/workshops/pages/WorkShops.vue'),
     },
-    {
-        path: '/gallery',
-        name: 'gallery',
-        beforeEnter() { window.open('https://www.google.com/maps/@52.4010064,16.920086,17z?hl=pl-PL', '_blank') }
-    }
+    // {
+    //     path: '/gallery',
+    //     name: 'gallery',
+    //     beforeEnter() { window.open('https://www.google.com/maps/@52.4010064,16.920086,17z?hl=pl-PL', '_blank') }
+    // }
 ];
 
 const router = new VueRouter({

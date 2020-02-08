@@ -75,6 +75,57 @@
   @import "~animate.css/source/sliding_entrances/slideInLeft.css";
   @import "~animate.css/source/sliding_exits/slideOutLeft.css";
 
+  .posts-container {
+    .ql-align-center {
+      text-align: center;
+    }
+    .ql-align-justify {
+      text-align: justify;
+    }
+    .ql-align-left {
+      text-align: left;
+    }
+    .ql-align-right {
+      text-align: right;
+    }
+    a {
+      text-decoration: none;
+      color: $color-success;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      @include font-roboto(500);
+      color: $color-secondary-800;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    h1 {
+      font-size: 35px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+    h3 {
+      font-size: 29px;
+    }
+    h4 {
+      font-size: 26px;
+    }
+    h5 {
+      font-size: 23px;
+    }
+    h6 {
+      font-size: 20px;
+    }
+    p {
+      @include font-roboto(400);
+      color: $color-secondary-600;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 0 20px 10px 0;
+    }
+  }
+
   * {
     padding: 0;
     margin: 0;
@@ -163,6 +214,9 @@
       height: 0;
       border-style: solid;
       border-width: 35px 40px 35px 0;
+      @media all and (min-width: $phone-upper-limit) and (max-width: $tablet-lower-limit) {
+        border-width: 35px 30px 35px 0;
+      }
       border-color: transparent $color-white transparent transparent;
     }
   }

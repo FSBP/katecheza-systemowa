@@ -1,5 +1,5 @@
 <template>
-    <div class="indicator-wrapper">
+    <div class="indicator-wrapper" :style="{ 'backgroundColor': withBg ? 'rgba(78, 78, 82, 0.5)' : 'transparent' }">
         <div class="load" :style="{ 'width': width + 'px', 'height': height + 'px' }">
             <hr><hr><hr><hr>
         </div>
@@ -15,6 +15,10 @@
             },
             height: {
                 type: String
+            },
+            withBg: {
+                type: Boolean,
+                required: false
             }
         }
     }

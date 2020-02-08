@@ -73,25 +73,7 @@
         padding-bottom: 50px;
         transition: transform .2s linear;
 
-        &::-webkit-scrollbar {
-            width: 5px;
-        }
-
-        /* Track */
-        &::-webkit-scrollbar-track {
-            border-radius: 10px;
-        }
-
-        /* Handle */
-        &::-webkit-scrollbar-thumb {
-            background-color: rgba($color-white, 0.6);
-            border-radius: 10px;
-        }
-
-        /* Handle on hover */
-        &::-webkit-scrollbar-thumb:hover {
-            background: $color-white;
-        }
+       @include scrollStyle($color-white);
 
         img {
             width: 100%;
@@ -151,6 +133,9 @@
                         height: 0;
                         border-style: solid;
                         border-width: 35px 40px 35px 0;
+                        @media all and (min-width: $phone-upper-limit) and (max-width: $tablet-lower-limit) {
+                            border-width: 35px 30px 35px 0;
+                        }
                         border-color: transparent $color-white transparent transparent;
                     }
                 }

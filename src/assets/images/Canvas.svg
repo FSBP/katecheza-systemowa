@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <filter id="Love_PNG_Love_PNGTREE" x="-123.007" y="-218.007" width="469.014" height="469.014" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-2" x="63.993" y="-142.007" width="469.014" height="469.014" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-2"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-3" x="-272.007" y="76.993" width="469.014" height="469.014" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-3"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-4" x="965.993" y="-296.007" width="469.014" height="469.014" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-4"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-5" x="888.993" y="-48.007" width="469.014" height="469.014" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-5"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-6" x="420.993" y="-185.007" width="469.014" height="469.014" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-6"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-7" x="701.993" y="-140.007" width="469.014" height="469.014" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-7"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-8" x="729.993" y="76.993" width="469.014" height="469.014" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-8"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-9" x="-75.005" y="99.995" width="370.01" height="370.01" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-9"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-10" x="110.996" y="130.996" width="290.007" height="290.007" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-10"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-11" x="967.995" y="91.995" width="367.01" height="367.01" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-11"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-11"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-12" x="622.995" y="-48.005" width="342.009" height="342.009" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-12"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-12"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-13" x="249.993" y="-218.007" width="469.014" height="469.014" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-13"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-13"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-14" x="622.995" y="91.995" width="367.01" height="367.01" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-14"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-14"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Love_PNG_Love_PNGTREE-15" x="304.995" y="-37.005" width="361.01" height="361.01" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16" result="blur-15"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur-15"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Canvas">
+      <rect width="1200" height="1200"/>
+    </clipPath>
+  </defs>
+  <g id="Canvas" clip-path="url(#clip-Canvas)">
+    <rect width="1200" height="1200" fill="rgba(0,0,0,0)"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE)">
+      <path id="Love_PNG_Love_PNGTREE-16" data-name="Love PNG Love PNGTREE" d="M111.5-170.007,298.007,16.5,111.5,203.007-75.007,16.5Z" fill="#9f39ff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-2)">
+      <path id="Love_PNG_Love_PNGTREE-17" data-name="Love PNG Love PNGTREE" d="M298.5-94.007,485.007,92.5,298.5,279.007,111.993,92.5Z" fill="#7eba31"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-3)">
+      <path id="Love_PNG_Love_PNGTREE-18" data-name="Love PNG Love PNGTREE" d="M-37.5,124.993,149.007,311.5-37.5,498.007-224.007,311.5Z" fill="#39a9ff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-4)">
+      <path id="Love_PNG_Love_PNGTREE-19" data-name="Love PNG Love PNGTREE" d="M1200.5-248.007,1387.007-61.5,1200.5,125.007,1013.993-61.5Z" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-5)">
+      <path id="Love_PNG_Love_PNGTREE-20" data-name="Love PNG Love PNGTREE" d="M1123.5-.007,1310.007,186.5,1123.5,373.007,936.993,186.5Z" fill="#4c4c4c"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-6)">
+      <path id="Love_PNG_Love_PNGTREE-21" data-name="Love PNG Love PNGTREE" d="M655.5-137.007,842.007,49.5,655.5,236.007,468.993,49.5Z" fill="#4c4c4c"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-7)">
+      <path id="Love_PNG_Love_PNGTREE-22" data-name="Love PNG Love PNGTREE" d="M936.5-92.007,1123.007,94.5,936.5,281.007,749.993,94.5Z" fill="#ff9f39"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-8)">
+      <path id="Love_PNG_Love_PNGTREE-23" data-name="Love PNG Love PNGTREE" d="M964.5,124.993,1151.007,311.5,964.5,498.007,777.993,311.5Z" fill="#4ec8f7"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-9)">
+      <path id="Love_PNG_Love_PNGTREE-24" data-name="Love PNG Love PNGTREE" d="M110,147.995,247.005,285,110,422.005-27.005,285Z" fill="#222"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-10)">
+      <path id="Love_PNG_Love_PNGTREE-25" data-name="Love PNG Love PNGTREE" d="M256,179l97,97-97,97-97-97Z" fill="#6d93e1"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-11)">
+      <path id="Love_PNG_Love_PNGTREE-26" data-name="Love PNG Love PNGTREE" d="M1151.5,139.995,1287.005,275.5,1151.5,411.005,1015.995,275.5Z" fill="#875546"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-12)">
+      <path id="Love_PNG_Love_PNGTREE-27" data-name="Love PNG Love PNGTREE" d="M794,0,917,123,794,246,671,123Z" fill="#7eba31"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-13)">
+      <path id="Love_PNG_Love_PNGTREE-28" data-name="Love PNG Love PNGTREE" d="M484.5-170.007,671.007,16.5,484.5,203.007,297.993,16.5Z" fill="#39b2ff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-14)">
+      <path id="Love_PNG_Love_PNGTREE-29" data-name="Love PNG Love PNGTREE" d="M806.5,139.995,942.005,275.5,806.5,411.005,670.995,275.5Z" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Love_PNG_Love_PNGTREE-15)">
+      <path id="Love_PNG_Love_PNGTREE-30" data-name="Love PNG Love PNGTREE" d="M485.5,11,618,143.5,485.5,276,353,143.5Z" fill="#ffa037"/>
+    </g>
+  </g>
+</svg>

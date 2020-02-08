@@ -3,7 +3,13 @@ import App from './App.vue';
 import router from './router.js';
 import store from './store.js';
 import DatePipe from "./core/pipes/DatePipe";
+import VueToastr from "vue-toastr";
 
+Vue.use(VueToastr, {
+  defaultTimeout: 5000,
+  defaultPosition: "toast-top-right",
+  defaultProgressBar: false
+});
 Vue.config.productionTip = false;
 
 export const bus = new Vue();

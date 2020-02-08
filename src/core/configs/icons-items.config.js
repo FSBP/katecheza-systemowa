@@ -9,14 +9,14 @@ export const iconsItems = [
         path: '/contact',
         name: 'contact',
         label: 'Kontakt',
-        imgSrc: 'mail-24px.svg'
+        imgSrc: 'contact_phone-24px.svg'
     },
-    {
-        path: '/gallery',
-        name: 'gallery',
-        label: 'Galeria',
-        imgSrc: 'collections-24px.svg'
-    },
+    // {
+    //     path: '/gallery',
+    //     name: 'gallery',
+    //     label: 'Galeria',
+    //     imgSrc: 'collections-24px.svg'
+    // },
     {
         path: '/about',
         name: 'about',

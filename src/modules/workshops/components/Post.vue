@@ -1,12 +1,15 @@
 <template>
     <article>
-        <div class="background-section" :style="{ 'background-image': `url('${ img }')` }">
-            <div class="tag">{{ tag }}</div>
-        </div>
         <div class="content-section">
+            <img src="../../../assets/images/Canvas.svg" alt="">
+            <a style="display: none;" href='https://pngtree.com/so/kolorowa kwadratowa rama'>kolorowa kwadratowa rama png from pngtree.com</a>
             <div class="text-wrapper">
-                <h1>{{ title }}</h1>
+                <h1>Szkolenie numer {{ workshopId }}</h1>
                 <div class="content" v-html="content"></div>
+                <button @click="openModal(workshopId)">
+                    <img src="../../../assets/icons/edit-24px.svg" alt="enroll icons">
+                    Zapisz się na szkolenie
+                </button>
                 <div class="date">{{ date | datePipe }}</div>
             </div>
         </div>
@@ -14,28 +17,32 @@
 </template>
 
 <script>
+
+    import { bus } from "../../../main";
+
     export default {
         name: "Post",
         props: {
-            title: {
-                type: String,
+            id: {
+                type: Number,
                 required: true
-            },
-            img: {
-                type: String,
-                require: false
             },
             content: {
                 type: String,
                 required: true
             },
+            workshopId: {
+                type: Number,
+                required: true
+            },
             date: {
                 type: String,
                 required: true
-            },
-            tag: {
-                type: String,
-                required: true
+            }
+        },
+        methods: {
+            openModal(id) {
+                bus.$emit('openModal', id);
             }
         }
     }
@@ -48,58 +55,29 @@
     article {
         width: 90%;
         max-width: 800px;
-        height: 650px;
+        height: 690px;
         margin: 100px 0;
         @include flex-column;
         border-radius: 5px;
 
-        .background-section {
+        img {
             width: 100%;
-            height: 250px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: scroll;
-            background-size: cover;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            @include flex-row-right-top;
-            padding: 20px;
-
-            .tag {
-                padding: 10px 15px;
-                background-color: $color-info;
-                border-radius: 50px;
-                @include font-roboto(500);
-                text-transform: uppercase;
-                color: $color-white;
-                font-size: 15px;
-            }
         }
 
         .content-section {
             width: 100%;
-            height: calc(100% - 250px);
-            padding: 20px;
+            height: 100%;
             background-color: $color-white;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
             position: relative;
 
-            &::before {
-                width: 80px;
-                height: 80px;
-                content: '';
-                position: absolute;
-                top: -40px;
-                @include background-image('https://i.imgur.com/pl2DVxz.jpg', scroll, right, no-repeat, cover);
-                background-position: -28px 0;
-                border-radius: 100%;
-            }
-
             .text-wrapper {
                 width: 100%;
-                height: 100%;
-                padding-top: 40px;
+                height: 400px;
+                padding: 20px;
+                position: absolute;
+                top: 300px;
                 @include flex-column-left-space-between;
 
                 h1 {
@@ -114,8 +92,33 @@
                     white-space: nowrap;
                 }
 
+                button {
+                    width: 280px;
+                    padding: 0 10px;
+                    height: 50px;
+                    border: 0;
+                    outline: 0;
+                    margin-top: 10px;
+                    background-color: $color-secondary-800;
+                    color: $color-white;
+                    @include font-roboto(400);
+                    font-size: 18px;
+                    cursor: pointer;
+                    transition: background-color .3s;
+                    @include flex-row-center-space-around;
+
+                    &:hover {
+                        background-color: $color-success;
+                    }
+
+                    img {
+                        width: 30px;
+                    }
+                }
+
                 .date {
                     width: 100%;
+                    margin-top: 20px;
                     height: auto;
                     color: $color-secondary-500;
                     @include font-roboto(400);
@@ -126,6 +129,7 @@
                     width: 100%;
                     height: calc(100% - 100px);
                     overflow-y: auto;
+                    margin-top: 30px;
 
                     @include scrollStyle($color-secondary-800);
 

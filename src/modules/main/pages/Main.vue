@@ -3,7 +3,7 @@
         <div class="menu-wrapper">
             <img src="../../../assets/images/waldek.gif" alt="brand icon" class="logo">
             <router-link v-for="(item, index) in items" :to="item.path" :key="index">
-                <NavigationButton :label="item.label" :position="item.position"></NavigationButton>
+                <NavigationButton :label="item.label" :position="item.position" tag="button"></NavigationButton>
             </router-link>
             <div class="icons-box">
                 <router-link
